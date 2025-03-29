@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'poppins', sans-serif;
+            background: whitesmoke;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .header {
+            width: 100%;
+            background-color: #2a4d8f; /* Azul más profesional */
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Item-menu-lateral-link{
+        color: white;
+        text-decoration: none;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .Inicio{
+        color:  white;
+        text-decoration: none;
+        }
+        .content {
+            margin-top: 60px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            width: 80%;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            color: black;
+            display: grid;
+            place-items: center;
+        }
+        .menu-btn {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            background-color: #2a4d8f;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            
+            border: none;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            color: black
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #3b5998;
+            position: fixed;
+            height: 100%;
+            left: -250px;
+            transition: left 0.3s;
+            padding-top: 20px;
+            color: white;
+        }
+        .sidebar.active {
+            left: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            font-weight: bold;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #3b5998;
+            border-bottom: 1px solid white;
+            text-align: center;
+        }
+        .sidebar ul li:hover {
+            background-color: #383f5a;
+            border-bottom: 1px solid white;
+        }
+        .close-btn {
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #3b5998;
+            color: white;
+            font-weight: bold;
+        }
+        .submenu {
+            display: none;
+            list-style: none;
+            padding-left: 20px;
+        }
+        .sidebar ul li.active .submenu {
+            display: block;
+        }
+        .accordion-content {
+            display: none;
+            list-style: none;
+            background-color: #7b93c7;
+            padding-left: 20px;
+        }
+        

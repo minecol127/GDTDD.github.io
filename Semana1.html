@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/semana1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Semana1</title>
+</head>
+     <body>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">✖</button>
+            <ul>
+                <li onclick="toggleAccordion('unidad1')">Unidad 1</li>
+                <ul id="unidad1" class="accordion-content">
+                    <li><a href="Semana1.html" class="Item-menu-lateral-link">Semana 1</a></li>
+                    <li><a href="Semana2.html" class="Item-menu-lateral-link">Semana 2</a></li>
+                    <li><a href="Semana3.html" class="Item-menu-lateral-link">Semana 3</a></li>
+                    <li><a href="Semana4.html" class="Item-menu-lateral-link">Semana 4</a></li>
+                </ul>
+        
+                <li onclick="toggleAccordion('unidad2')">Unidad 2</li>
+                <ul id="unidad2" class="accordion-content">
+                    <li><a href="Semana5.html" class="Item-menu-lateral-link">Semana 5</a></li>
+                    <li><a href="Semana6.html" class="Item-menu-lateral-link">Semana 6</a></li>
+                    <li><a href="Semana7.html" class="Item-menu-lateral-link">Semana 7</a></li>
+                    <li><a href="Semana8.html" class="Item-menu-lateral-link">Semana 8</a></li>
+                </ul>
+        
+                <li onclick="toggleAccordion('unidad3')">Unidad 3</li>
+                <ul id="unidad3" class="accordion-content">
+                    <li><a href="Semana9.html" class="Item-menu-lateral-link">Semana 9</a></li>
+                    <li><a href="Semana10.html" class="Item-menu-lateral-link">Semana 10</a></li>
+                    <li><a href="Semana11.html" class="Item-menu-lateral-link">Semana 11</a></li>
+                    <li><a href="Semana12.html" class="Item-menu-lateral-link">Semana 12</a></li>
+                </ul>
+        
+                <li onclick="toggleAccordion('unidad4')">Unidad 4</li>
+                <ul id="unidad4" class="accordion-content">
+                    <li><a href="Semana13.html" class="Item-menu-lateral-link">Semana 13</a></li>
+                    <li><a href="Semana14.html" class="Item-menu-lateral-link">Semana 14</a></li>
+                    <li><a href="Semana15.html" class="Item-menu-lateral-link">Semana 15</a></li>
+                    <li><a href="Semana16.html" class="Item-menu-lateral-link">Semana 16</a></li>
+                </ul>
+        
+                <li><a href="./Index.html" class="Inicio">Inicio</a></li> 
+            </ul>
+        </div>
+        <div class="header"> <span>GESTIÓNDE TOMA  <br> DE DECISIONES</span>
+            <img src="/fotos/Logo_semana1.png" width="100px" height="100px">
+        </div>
+        <div class="content">
+            <h1>SEMANA 1-TEORIA DE DESICIONES</h1>
+            <ol>
+                <li class="punto-1">Objetivo general </li>
+                <p class="content-1">En esta página encontrarás una recopilación de resúmenes y conocimientos clave enfocados en la gestión y toma de decisiones. Mi objetivo es ofrecer una perspectiva clara y práctica sobre cómo tomar decisiones más acertadas en diferentes contextos, desde el ámbito profesional hasta el personal.
+                Cada unidad abarca conceptos fundamentales extraídos de libros esenciales en este campo, los cuales pronto serán complementados con mis propias reflexiones y análisis para enriquecer el contenido. Mientras tanto, te invito a explorar los resúmenes existentes y a compartir tus ideas para fomentar un aprendizaje colaborativo. </p>
+            
+            </ol>
+        </div>
+        <script>
+       function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+        function toggleAccordion(id) {
+            let element = document.getElementById(id);
+            element.style.display = element.style.display === 'block' ? 'none' : 'block';
+        }
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 30; i++) {
+                let particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.animationDuration = `${2 + Math.random() * 3}s`;
+                particlesContainer.appendChild(particle);
+            }
+        }
+        createParticles();
+    </script>
+    </body>
+</html>
+    
